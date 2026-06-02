@@ -1,0 +1,97 @@
+EXERCICIO 1:
+programa
+
+{
+  funcao inicio()
+  {
+    real numero1, numero2, resultado
+    inteiro opcao
+
+    escreva("Digite o primeiro número: ")
+    leia(numero1)
+
+    escreva("Digite o segundo número: ")
+    leia(numero2)
+
+    escreva("\n1 - Soma")
+    escreva("\n2 - Subtração")
+    escreva("\n3 - Multiplicação")
+    escreva("\n4 - Divisão")
+    escreva("\nEscolha uma opção: ")
+    leia(opcao)
+
+    escolha(opcao)
+    {
+      caso 1:
+        resultado = numero1 + numero2
+        escreva("\nResultado: ", resultado)
+        pare
+
+      caso 2:
+        resultado = numero1 - numero2
+        escreva("\nResultado: ", resultado)
+        pare
+
+      caso 3:
+        resultado = numero1 * numero2
+        escreva("\nResultado: ", resultado)
+        pare
+
+      caso 4:
+        se(numero2 != 0)
+        {
+          resultado = numero1 / numero2
+          escreva("\nResposta: ", resultado)
+        }
+        senao
+        {
+          escreva("\nErro: a divisão por zero nao existe!")
+        }
+        pare
+
+      caso contrario:
+        escreva("\nNao existe!")
+    }
+  }
+}
+
+
+EXERCICIO 2:
+
+programa
+{
+	funcao inicio()
+	{
+		inteiro numero
+
+		escreva("Escreva um número: ")
+		leia(numero)
+
+		para(inteiro i = 1; i <= 10; i++)
+		{
+			escreva("\n", numero, " x ", i, " = ", numero * i)
+		}
+	}
+}
+
+
+EXERCICIO 3
+programa
+{
+  funcao inicio()
+  {
+    cadeia senhaCorreta = "senha123"
+    cadeia senhaDigitada
+
+    escreva("Digite a senha: ")
+    leia(senhaDigitada)
+
+    enquanto(senhaDigitada != senhaCorreta)
+    {
+      escreva("\nSenha incorreta, tente novamente: ")
+      leia(senhaDigitada)
+    }
+
+    escreva("\nAcesso Liberado! Bem-vindo!")
+  }
+}
